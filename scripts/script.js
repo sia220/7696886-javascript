@@ -61,14 +61,7 @@ function lancerJeu() {
     let score = 0
     let nbMotsProposes = 0
 
-    // On détermine la liste des mots ou des phrases à proposer à l'utilisateur
-    if (choix === "mots") {
-        score = lancerBoucleDeJeu(listeMots)
-        nbMotsProposes = listeMots.length
-    } else {
-        score = lancerBoucleDeJeu(listePhrases)
-        nbMotsProposes = listePhrases.length
-    }
+    
 
     afficherResultat(score, nbMotsProposes)
 }
